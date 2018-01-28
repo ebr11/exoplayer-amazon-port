@@ -186,6 +186,11 @@ public final class C {
   public static final int ENCODING_DTS_HD = AudioFormat.ENCODING_DTS_HD;
 
   /**
+   * @see AudioFormat#ENCODING_DOLBY_TRUEHD
+   */
+  public static final int ENCODING_DOLBY_TRUEHD = AudioFormat.ENCODING_DOLBY_TRUEHD;
+
+  /**
    * @see AudioFormat#CHANNEL_OUT_7POINT1_SURROUND
    */
   @SuppressWarnings("deprecation")
