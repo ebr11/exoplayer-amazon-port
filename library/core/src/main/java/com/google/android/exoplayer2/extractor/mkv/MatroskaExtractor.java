@@ -371,6 +371,10 @@ public final class MatroskaExtractor implements Extractor {
   // Extractor outputs.
   private ExtractorOutput extractorOutput;
 
+  // -emby mods
+  public static boolean ForceDtsHd = false;
+  // end mods
+
   public MatroskaExtractor() {
     this(0);
   }
