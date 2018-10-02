@@ -33,7 +33,6 @@ import java.util.Collections;
 import java.util.List;
 
 import static com.google.android.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_ALLOW_NON_IDR_KEYFRAMES;
-import static com.google.android.exoplayer2.extractor.ts.DefaultTsPayloadReaderFactory.FLAG_DETECT_ACCESS_UNITS;
 
 /**
  * Default {@link HlsExtractorFactory} implementation.
@@ -85,7 +84,7 @@ public final class DefaultHlsExtractorFactory implements HlsExtractorFactory {
     } else {
       // For any other file extension, we assume TS format.
       @DefaultTsPayloadReaderFactory.Flags
-      int esReaderFactoryFlags = DefaultTsPayloadReaderFactory.FLAG_IGNORE_SPLICE_INFO_STREAM | FLAG_ALLOW_NON_IDR_KEYFRAMES | FLAG_DETECT_ACCESS_UNITS;
+      int esReaderFactoryFlags = DefaultTsPayloadReaderFactory.FLAG_IGNORE_SPLICE_INFO_STREAM | FLAG_ALLOW_NON_IDR_KEYFRAMES;
       if (muxedCaptionFormats != null) {
         // The playlist declares closed caption renditions, we should ignore descriptors.
         esReaderFactoryFlags |= DefaultTsPayloadReaderFactory.FLAG_OVERRIDE_CAPTION_DESCRIPTORS;
