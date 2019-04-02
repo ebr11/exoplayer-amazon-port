@@ -367,8 +367,6 @@ public final class MatroskaExtractor implements Extractor {
   private boolean sampleRead;
   private boolean sampleSeenReferenceBlock;
 
-  public static boolean ForceDtsHd = false;
-
   // Extractor outputs.
   private ExtractorOutput extractorOutput;
 
